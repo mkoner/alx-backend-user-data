@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-''' SQLAlchemy model named User for a database table named users '''
+'''SQLAlchemy model User for database table users'''
 
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
@@ -14,4 +14,3 @@ class User(Base):
     hashed_password = Column(String(250), nullable=False)
     session_id = Column(String(250))
     reset_token = Column(String(250))
-    
